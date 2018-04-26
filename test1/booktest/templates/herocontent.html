@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% for hero in herolist %}
+            {{ hero.hbook }}
+        {% endfor %}
+    </title>
+
+</head>
+<body>
+{% for hero in herolist %}
+    <h3>{{ hero.hname }}</h3><br>
+    {{ hero.hcontent }}<br>
+{% endfor %}
+</body>
+</html>
